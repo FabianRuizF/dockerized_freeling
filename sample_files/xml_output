@@ -1,0 +1,434 @@
+<OUTPUT SRCFILE="/root/freeling_files/input_file">
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+<paragraph>
+<sentence id="1">
+  <token id="t1.1" begin="0" end="12" form="FC_Barcelona" lemma="fc_barcelona" tag="NP00O00" ctag="NP" pos="noun" type="proper" neclass="organization" nec="ORG" >
+  </token>
+  <token id="t1.2" begin="13" end="22" form="president" lemma="president" tag="NN" ctag="NN" pos="noun" type="common" num="singular" wn="10467395-n" >
+  </token>
+  <token id="t1.3" begin="23" end="35" form="Joan_Laporta" lemma="joan_laporta" tag="NP00SP0" ctag="NP" pos="noun" type="proper" neclass="person" nec="PER" >
+  </token>
+  <token id="t1.4" begin="36" end="39" form="has" lemma="have" tag="VBZ" ctag="VBZ" pos="verb" vform="personal" person="3" wn="00120796-v" >
+  </token>
+  <token id="t1.5" begin="40" end="46" form="warned" lemma="warn" tag="VBN" ctag="VBN" pos="verb" vform="participle" wn="00832907-v" >
+  </token>
+  <token id="t1.6" begin="47" end="54" form="Chelsea" lemma="chelsea" tag="NP00V00" ctag="NP" pos="noun" type="proper" neclass="other" nec="MISC" >
+  </token>
+  <token id="t1.7" begin="55" end="58" form="off" lemma="off" tag="IN" ctag="IN" pos="preposition" >
+  </token>
+  <token id="t1.8" begin="59" end="63" form="star" lemma="star" tag="NN" ctag="NN" pos="noun" type="common" num="singular" wn="09444100-n" >
+  </token>
+  <token id="t1.9" begin="64" end="71" form="striker" lemma="striker" tag="NN" ctag="NN" pos="noun" type="common" num="singular" wn="10178216-n" >
+  </token>
+  <token id="t1.10" begin="72" end="84" form="Leonel_Messi" lemma="leonel_messi" tag="NP00SP0" ctag="NP" pos="noun" type="proper" neclass="person" nec="PER" >
+  </token>
+  <token id="t1.11" begin="84" end="85" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period" >
+  </token>
+  <constituents>
+    <node head="1" label="claus" >
+      <node label="n-chunk" >
+        <node leaf="1" token="t1.1" word="FC_Barcelona" />
+        <node head="1" label="n-chunk" >
+          <node leaf="1" token="t1.2" word="president" />
+          <node head="1" label="n-chunk" >
+            <node leaf="1" head="1" token="t1.3" word="Joan_Laporta" />
+          </node>
+        </node>
+      </node>
+      <node label="vb-have" >
+        <node leaf="1" head="1" token="t1.4" word="has" />
+      </node>
+      <node head="1" label="vb-chunk" >
+        <node leaf="1" head="1" token="t1.5" word="warned" />
+      </node>
+      <node label="n-chunk" >
+        <node leaf="1" head="1" token="t1.6" word="Chelsea" />
+      </node>
+      <node label="sp-chunk" >
+        <node leaf="1" head="1" token="t1.7" word="off" />
+        <node label="n-chunk" >
+          <node leaf="1" token="t1.8" word="star" />
+          <node head="1" label="n-chunk" >
+            <node leaf="1" token="t1.9" word="striker" />
+            <node head="1" label="n-chunk" >
+              <node leaf="1" head="1" token="t1.10" word="Leonel_Messi" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node label="st-brk" >
+        <node leaf="1" head="1" token="t1.11" word="." />
+      </node>
+    </node>
+  </constituents>
+  <dependencies>
+    <depnode token="t1.4" function="ROOT" word="has" >
+      <depnode token="t1.2" function="SBJ" word="president" >
+        <depnode token="t1.1" function="NMOD" word="FC_Barcelona" />
+      </depnode>
+      <depnode token="t1.3" function="SBJ" word="Joan_Laporta" />
+      <depnode token="t1.5" function="VC" word="warned" >
+        <depnode token="t1.6" function="OBJ" word="Chelsea" />
+        <depnode token="t1.7" function="ADV" word="off" >
+          <depnode token="t1.9" function="AMOD" word="striker" >
+            <depnode token="t1.8" function="NMOD" word="star" />
+            <depnode token="t1.10" function="APPO" word="Leonel_Messi" />
+          </depnode>
+        </depnode>
+      </depnode>
+      <depnode token="t1.11" function="P" word="." />
+    </depnode>
+  </dependencies>
+  <predicates>
+    <predicate id="P1.1" head_token="t1.5" sense="warn.01" words="warned" >
+      <argument role="A0" words="FC_Barcelona president" head_token="t1.2" from="t1.1" to="t1.2" />
+      <argument role="A0" words="Joan_Laporta" head_token="t1.3" from="t1.3" to="t1.3" />
+      <argument role="A2" words="Chelsea" head_token="t1.6" from="t1.6" to="t1.6" />
+      <argument role="A2" words="off star striker Leonel_Messi" head_token="t1.7" from="t1.7" to="t1.10" />
+    </predicate>
+    <predicate id="P1.2" head_token="t1.9" sense="hit.01" words="striker" >
+      <argument role="A1" words="star" head_token="t1.8" from="t1.8" to="t1.8" />
+    </predicate>
+  </predicates>
+</sentence>
+<sentence id="2">
+  <token id="t2.1" begin="86" end="91" form="Aware" lemma="aware" tag="JJ" ctag="JJ" pos="adjective" wn="00190115-a" >
+  </token>
+  <token id="t2.2" begin="92" end="94" form="of" lemma="of" tag="IN" ctag="IN" pos="preposition" >
+  </token>
+  <token id="t2.3" begin="95" end="102" form="Chelsea" lemma="chelsea" tag="NP00V00" ctag="NP" pos="noun" type="proper" neclass="other" nec="MISC" >
+  </token>
+  <token id="t2.4" begin="103" end="108" form="owner" lemma="owner" tag="NN" ctag="NN" pos="noun" type="common" num="singular" wn="10388924-n" >
+  </token>
+  <token id="t2.5" begin="109" end="125" form="Roman_Abramovich" lemma="roman_abramovich" tag="NP00V00" ctag="NP" pos="noun" type="proper" neclass="other" nec="MISC" >
+  </token>
+  <token id="t2.6" begin="125" end="126" form="’" lemma="’" tag="Frc" ctag="Frc" pos="punctuation" type="quotation" punctenclose="close" >
+  </token>
+  <token id="t2.7" begin="126" end="127" form="s" lemma="s" tag="NNS" ctag="NNS" pos="noun" type="common" num="plural" wn="13833375-n" >
+  </token>
+  <token id="t2.8" begin="128" end="136" form="interest" lemma="interest" tag="NN" ctag="NN" pos="noun" type="common" num="singular" wn="05682950-n" >
+  </token>
+  <token id="t2.9" begin="137" end="139" form="in" lemma="in" tag="IN" ctag="IN" pos="preposition" >
+  </token>
+  <token id="t2.10" begin="140" end="143" form="the" lemma="the" tag="DT" ctag="DT" pos="determiner" >
+  </token>
+  <token id="t2.11" begin="144" end="149" form="young" lemma="young" tag="JJ" ctag="JJ" pos="adjective" wn="01646941-a" >
+  </token>
+  <token id="t2.12" begin="150" end="159" form="Argentine" lemma="argentine" tag="NP00V00" ctag="NP" pos="noun" type="proper" neclass="other" nec="MISC" wn="02542958-n" >
+  </token>
+  <token id="t2.13" begin="159" end="160" form="," lemma="," tag="Fc" ctag="Fc" pos="punctuation" type="comma" >
+  </token>
+  <token id="t2.14" begin="161" end="168" form="Laporta" lemma="laporta" tag="NP00SP0" ctag="NP" pos="noun" type="proper" neclass="person" nec="PER" >
+  </token>
+  <token id="t2.15" begin="169" end="173" form="said" lemma="say" tag="VBD" ctag="VBD" pos="verb" vform="past" wn="01009240-v" >
+  </token>
+  <token id="t2.16" begin="174" end="178" form="last" lemma="last" tag="JJ" ctag="JJ" pos="adjective" wn="01013279-a" >
+  </token>
+  <token id="t2.17" begin="179" end="184" form="night" lemma="night" tag="NN" ctag="NN" pos="noun" type="common" num="singular" wn="15167027-n" >
+  </token>
+  <token id="t2.18" begin="184" end="185" form=":" lemma=":" tag="Fd" ctag="Fd" pos="punctuation" type="colon" >
+  </token>
+  <token id="t2.19" begin="186" end="187" form="”" lemma="”" tag="Frc" ctag="Frc" pos="punctuation" type="quotation" punctenclose="close" >
+  </token>
+  <token id="t2.20" begin="187" end="188" form="I" lemma="i" tag="PRP" ctag="PRP" pos="pronoun" type="personal" >
+  </token>
+  <token id="t2.21" begin="189" end="193" form="will" lemma="will" tag="MD" ctag="MD" pos="verb" type="modal" >
+  </token>
+  <token id="t2.22" begin="194" end="200" form="answer" lemma="answer" tag="VB" ctag="VB" pos="verb" vform="infinitive" wn="02669789-v" >
+  </token>
+  <token id="t2.23" begin="201" end="203" form="as" lemma="as" tag="IN" ctag="IN" pos="preposition" >
+  </token>
+  <token id="t2.24" begin="204" end="210" form="always" lemma="always" tag="RB" ctag="RB" pos="adverb" type="general" wn="00019339-r" >
+  </token>
+  <token id="t2.25" begin="210" end="211" form="," lemma="," tag="Fc" ctag="Fc" pos="punctuation" type="comma" >
+  </token>
+  <token id="t2.26" begin="212" end="217" form="Messi" lemma="messi" tag="NP00SP0" ctag="NP" pos="noun" type="proper" neclass="person" nec="PER" >
+  </token>
+  <token id="t2.27" begin="218" end="220" form="is" lemma="be" tag="VBZ" ctag="VBZ" pos="verb" vform="personal" person="3" wn="02604760-v" >
+  </token>
+  <token id="t2.28" begin="221" end="224" form="not" lemma="not" tag="RB" ctag="RB" pos="adverb" type="general" wn="00024073-r" >
+  </token>
+  <token id="t2.29" begin="225" end="228" form="for" lemma="for" tag="IN" ctag="IN" pos="preposition" >
+  </token>
+  <token id="t2.30" begin="229" end="233" form="sale" lemma="sale" tag="NN" ctag="NN" pos="noun" type="common" num="singular" wn="01117723-n" >
+  </token>
+  <token id="t2.31" begin="234" end="237" form="and" lemma="and" tag="CC" ctag="CC" pos="conjunction" type="coordinating" >
+  </token>
+  <token id="t2.32" begin="238" end="240" form="we" lemma="we" tag="PRP" ctag="PRP" pos="pronoun" type="personal" >
+  </token>
+  <token id="t2.33" begin="241" end="243" form="do" lemma="do" tag="VBP" ctag="VBP" pos="verb" vform="personal" wn="02669789-v" >
+  </token>
+  <token id="t2.34" begin="244" end="247" form="not" lemma="not" tag="RB" ctag="RB" pos="adverb" type="general" wn="00024073-r" >
+  </token>
+  <token id="t2.35" begin="248" end="252" form="want" lemma="want" tag="VB" ctag="VB" pos="verb" vform="infinitive" wn="01825237-v" >
+  </token>
+  <token id="t2.36" begin="253" end="255" form="to" lemma="to" tag="TO" ctag="TO" pos="particle" type="to" >
+  </token>
+  <token id="t2.37" begin="256" end="259" form="let" lemma="let" tag="VB" ctag="VB" pos="verb" vform="infinitive" wn="00120796-v" >
+  </token>
+  <token id="t2.38" begin="260" end="263" form="him" lemma="him" tag="PRP" ctag="PRP" pos="pronoun" type="personal" >
+  </token>
+  <token id="t2.39" begin="264" end="266" form="go" lemma="go" tag="VB" ctag="VB" pos="verb" vform="infinitive" wn="01835496-v" >
+  </token>
+  <token id="t2.40" begin="266" end="267" form="." lemma="." tag="Fp" ctag="Fp" pos="punctuation" type="period" >
+  </token>
+  <token id="t2.41" begin="267" end="268" form="”" lemma="”" tag="Frc" ctag="Frc" pos="punctuation" type="quotation" punctenclose="close" >
+  </token>
+  <constituents>
+    <node head="1" label="claus" >
+      <node label="sn-coor" >
+        <node label="n-chunk" >
+          <node label="attrib" >
+            <node leaf="1" head="1" token="t2.1" word="Aware" />
+            <node label="sp-chunk" >
+              <node leaf="1" head="1" token="t2.2" word="of" />
+              <node label="n-chunk" >
+                <node leaf="1" token="t2.3" word="Chelsea" />
+                <node head="1" label="n-chunk" >
+                  <node leaf="1" token="t2.4" word="owner" />
+                  <node head="1" label="n-chunk" >
+                    <node leaf="1" head="1" token="t2.5" word="Roman_Abramovich" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node label="quot-mk" >
+              <node leaf="1" head="1" token="t2.6" word="’" />
+            </node>
+          </node>
+          <node leaf="1" token="t2.7" word="s" />
+          <node head="1" label="n-chunk" >
+            <node leaf="1" head="1" token="t2.8" word="interest" />
+          </node>
+          <node label="sp-chunk" >
+            <node leaf="1" head="1" token="t2.9" word="in" />
+            <node label="sn-chunk" >
+              <node leaf="1" token="t2.10" word="the" />
+              <node head="1" label="n-chunk" >
+                <node label="attrib" >
+                  <node leaf="1" head="1" token="t2.11" word="young" />
+                </node>
+                <node head="1" label="n-chunk" >
+                  <node leaf="1" head="1" token="t2.12" word="Argentine" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node label="sf-brk" >
+            <node leaf="1" head="1" token="t2.13" word="," />
+          </node>
+          <node label="sv" >
+            <node label="n-chunk" >
+              <node leaf="1" head="1" token="t2.14" word="Laporta" />
+            </node>
+            <node leaf="1" head="1" token="t2.15" word="said" />
+            <node label="n-chunk" >
+              <node label="attrib" >
+                <node leaf="1" head="1" token="t2.16" word="last" />
+              </node>
+              <node head="1" label="n-chunk" >
+                <node leaf="1" head="1" token="t2.17" word="night" />
+              </node>
+            </node>
+            <node label="sf-brk" >
+              <node leaf="1" head="1" token="t2.18" word=":" />
+            </node>
+          </node>
+          <node label="sv" >
+            <node label="quot-mk" >
+              <node leaf="1" head="1" token="t2.19" word="”" />
+            </node>
+            <node label="sn-chunk" >
+              <node leaf="1" head="1" token="t2.20" word="I" />
+            </node>
+            <node label="mod-chunk" >
+              <node leaf="1" head="1" token="t2.21" word="will" />
+            </node>
+            <node head="1" label="vb-chunk" >
+              <node leaf="1" head="1" token="t2.22" word="answer" />
+            </node>
+            <node label="adv" >
+              <node leaf="1" head="1" token="t2.23" word="as" />
+            </node>
+            <node label="adv" >
+              <node leaf="1" head="1" token="t2.24" word="always" />
+              <node label="sf-brk" >
+                <node leaf="1" head="1" token="t2.25" word="," />
+              </node>
+            </node>
+          </node>
+          <node label="sv" >
+            <node label="n-chunk" >
+              <node leaf="1" head="1" token="t2.26" word="Messi" />
+            </node>
+            <node leaf="1" head="1" token="t2.27" word="is" />
+            <node label="adv" >
+              <node leaf="1" head="1" token="t2.28" word="not" />
+            </node>
+            <node label="sp-chunk" >
+              <node leaf="1" head="1" token="t2.29" word="for" />
+              <node label="n-chunk" >
+                <node leaf="1" head="1" token="t2.30" word="sale" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node leaf="1" head="1" token="t2.31" word="and" />
+        <node label="sn-chunk" >
+          <node leaf="1" head="1" token="t2.32" word="we" />
+        </node>
+        <node label="sv" >
+          <node label="vb-do" >
+            <node leaf="1" head="1" token="t2.33" word="do" />
+            <node label="adv" >
+              <node leaf="1" head="1" token="t2.34" word="not" />
+            </node>
+          </node>
+          <node leaf="1" head="1" token="t2.35" word="want" />
+          <node label="inf-mk" >
+            <node leaf="1" head="1" token="t2.36" word="to" />
+            <node label="inf" >
+              <node leaf="1" head="1" token="t2.37" word="let" />
+              <node label="sn-chunk" >
+                <node leaf="1" head="1" token="t2.38" word="him" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node leaf="1" head="1" token="t2.39" word="go" />
+      <node label="st-brk" >
+        <node leaf="1" head="1" token="t2.40" word="." />
+      </node>
+      <node label="quot-mk" >
+        <node leaf="1" head="1" token="t2.41" word="”" />
+      </node>
+    </node>
+  </constituents>
+  <dependencies>
+    <depnode token="t2.15" function="ROOT" word="said" >
+      <depnode token="t2.1" function="ADV" word="Aware" >
+        <depnode token="t2.2" function="NMOD" word="of" >
+          <depnode token="t2.4" function="PMOD" word="owner" >
+            <depnode token="t2.3" function="NMOD" word="Chelsea" />
+            <depnode token="t2.5" function="APPO" word="Roman_Abramovich" >
+              <depnode token="t2.6" function="P" word="’" />
+            </depnode>
+          </depnode>
+          <depnode token="t2.8" function="PMOD" word="interest" >
+            <depnode token="t2.7" function="NMOD" word="s" />
+            <depnode token="t2.9" function="NMOD" word="in" >
+              <depnode token="t2.12" function="PMOD" word="Argentine" >
+                <depnode token="t2.10" function="NMOD" word="the" />
+                <depnode token="t2.11" function="NMOD" word="young" />
+              </depnode>
+            </depnode>
+          </depnode>
+        </depnode>
+      </depnode>
+      <depnode token="t2.13" function="P" word="," />
+      <depnode token="t2.14" function="SBJ" word="Laporta" />
+      <depnode token="t2.17" function="TMP" word="night" >
+        <depnode token="t2.16" function="NMOD" word="last" />
+      </depnode>
+      <depnode token="t2.18" function="P" word=":" />
+      <depnode token="t2.19" function="P" word="”" />
+      <depnode token="t2.21" function="OBJ" word="will" >
+        <depnode token="t2.20" function="SBJ" word="I" />
+        <depnode token="t2.22" function="VC" word="answer" >
+          <depnode token="t2.23" function="TMP" word="as" />
+          <depnode token="t2.24" function="TMP" word="always" />
+        </depnode>
+      </depnode>
+      <depnode token="t2.27" function="OBJ" word="is" >
+        <depnode token="t2.25" function="P" word="," />
+        <depnode token="t2.26" function="SBJ" word="Messi" />
+        <depnode token="t2.28" function="ADV" word="not" />
+        <depnode token="t2.29" function="PRD" word="for" >
+          <depnode token="t2.30" function="PMOD" word="sale" />
+        </depnode>
+        <depnode token="t2.31" function="COORD" word="and" >
+          <depnode token="t2.33" function="CONJ" word="do" >
+            <depnode token="t2.32" function="SBJ" word="we" />
+            <depnode token="t2.34" function="ADV" word="not" />
+            <depnode token="t2.35" function="VC" word="want" >
+              <depnode token="t2.36" function="OPRD" word="to" >
+                <depnode token="t2.37" function="IM" word="let" >
+                  <depnode token="t2.38" function="OBJ" word="him" />
+                  <depnode token="t2.39" function="OPRD" word="go" />
+                </depnode>
+              </depnode>
+            </depnode>
+          </depnode>
+        </depnode>
+      </depnode>
+      <depnode token="t2.40" function="P" word="." />
+      <depnode token="t2.41" function="P" word="”" />
+    </depnode>
+  </dependencies>
+  <predicates>
+    <predicate id="P2.1" head_token="t2.4" sense="own.01|have.03" words="owner" >
+      <argument role="A0" words="Chelsea owner Roman_Abramovich ’" head_token="t2.4" from="t2.3" to="t2.6" />
+    </predicate>
+    <predicate id="P2.2" head_token="t2.8" sense="interest.01|worry.01|concern.01" words="interest" >
+      <argument role="A2" words="s" head_token="t2.7" from="t2.7" to="t2.7" />
+      <argument role="A1" words="in the young Argentine" head_token="t2.9" from="t2.9" to="t2.12" />
+    </predicate>
+    <predicate id="P2.3" head_token="t2.15" sense="state.01|tell.01|say.01" words="said" >
+      <argument role="AM-ADV" words="Aware of Chelsea owner Roman_Abramovich ’ s interest in the young Argentine" head_token="t2.1" from="t2.1" to="t2.12" />
+      <argument role="A0" words="Laporta" head_token="t2.14" from="t2.14" to="t2.14" />
+      <argument role="AM-TMP" words="last night" head_token="t2.17" from="t2.16" to="t2.17" />
+      <argument role="A1" words="I will answer as always" head_token="t2.21" from="t2.20" to="t2.24" />
+      <argument role="A1" words=", Messi is not for sale and we do not want to let him go" head_token="t2.27" from="t2.25" to="t2.39" />
+    </predicate>
+    <predicate id="P2.4" head_token="t2.22" sense="answer.00" words="answer" >
+      <argument role="A0" words="I" head_token="t2.20" from="t2.20" to="t2.20" />
+      <argument role="AM-MOD" words="I will answer as always" head_token="t2.21" from="t2.20" to="t2.24" />
+      <argument role="AM-TMP" words="as" head_token="t2.23" from="t2.23" to="t2.23" />
+      <argument role="AM-TMP" words="always" head_token="t2.24" from="t2.24" to="t2.24" />
+    </predicate>
+    <predicate id="P2.5" head_token="t2.27" sense="be.00" words="is" >
+      <argument role="A0" words="Messi" head_token="t2.26" from="t2.26" to="t2.26" />
+      <argument role="AM-NEG" words="not" head_token="t2.28" from="t2.28" to="t2.28" />
+      <argument role="C-A1" words="for sale" head_token="t2.29" from="t2.29" to="t2.30" />
+    </predicate>
+    <predicate id="P2.6" head_token="t2.35" sense="want.01" words="want" >
+      <argument role="A0" words="we" head_token="t2.32" from="t2.32" to="t2.32" />
+      <argument role="AM-NEG" words="not" head_token="t2.34" from="t2.34" to="t2.34" />
+      <argument role="A1" words="to let him go" head_token="t2.36" from="t2.36" to="t2.39" />
+    </predicate>
+    <predicate id="P2.7" head_token="t2.37" sense="let.00" words="let" >
+      <argument role="A0" words="we" head_token="t2.32" from="t2.32" to="t2.32" />
+      <argument role="A1" words="him" head_token="t2.38" from="t2.38" to="t2.38" />
+      <argument role="C-A1" words="go" head_token="t2.39" from="t2.39" to="t2.39" />
+    </predicate>
+    <predicate id="P2.8" head_token="t2.39" sense="move.01|travel.01" words="go" >
+      <argument role="A1" words="him" head_token="t2.38" from="t2.38" to="t2.38" />
+    </predicate>
+  </predicates>
+</sentence>
+</paragraph>
+<coreferences>
+  <coref id="co3">
+    <mention id="m3.1" from="t1.3" to="t1.3" words="Joan_Laporta" />
+    <mention id="m3.2" from="t2.14" to="t2.14" words="Laporta" />
+    <mention id="m3.3" from="t2.20" to="t2.20" words="I" />
+  </coref>
+  <coref id="co4">
+    <mention id="m4.1" from="t1.6" to="t1.6" words="Chelsea" />
+    <mention id="m4.2" from="t2.3" to="t2.3" words="Chelsea" />
+  </coref>
+  <coref id="co7">
+    <mention id="m7.1" from="t1.8" to="t1.10" words="star striker Leonel_Messi" />
+    <mention id="m7.2" from="t1.10" to="t1.10" words="Leonel_Messi" />
+    <mention id="m7.3" from="t2.26" to="t2.26" words="Messi" />
+    <mention id="m7.4" from="t2.38" to="t2.38" words="him" />
+  </coref>
+  <coref id="co10">
+    <mention id="m10.1" from="t2.3" to="t2.5" words="Chelsea owner Roman_Abramovich" />
+    <mention id="m10.2" from="t2.5" to="t2.5" words="Roman_Abramovich" />
+  </coref>
+</coreferences>
+</document>
+</OUTPUT>
