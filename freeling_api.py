@@ -13,8 +13,11 @@ def time_now():
 
 
 LANGUAGE="it"
-
 FILE_TYPE = f"{LANGUAGE}.cfg"
+BASE_NAME = "Gonza_Dataset"
+ID_COLUMN = "ID Particpant"
+TEXT_COLUMN = "text"
+
 
 file_text = """
 FC Barcelona president Joan Laporta has
@@ -125,13 +128,11 @@ restart_freeling()
 time.sleep(18)
 
 
-BASE_NAME = "Gonza_Dataset"
 
-pat_df = pd.read_csv(f"{BASE_NAME}.csv",sep=";")
-ID_COLUMN = "ID Particpant"
-TEXT_COLUMN = "text"
-pat_df=pat_df.fillna("")
-for index,row in pat_df.iterrows():
+
+data_df = pd.read_csv(f"{BASE_NAME}.csv",sep=";")
+data_df=data_df.fillna("")
+for index,row in data_df.iterrows():
     if(row[TEXT_COLUMN]==""):
         continue
     no_punct_string =  row[TEXT_COLUMN].translate(str.maketrans('', '', string.punctuation))
@@ -153,7 +154,7 @@ time.sleep(18)
 list_of_lemma=[]
 list_of_form=[]
 
-for index,row in pat_df.iterrows():
+for index,row in data_df.iterrows():
     if(row[TEXT_COLUMN]==""):
         continue
 
